@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TRAPN™ Shorts — Basketball Shorts to Match Your Sneakers</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   DESIGN SYSTEM — TRAPN™ SHORTS
+   Aesthetic: Bold Dark Athletic — hoopers, sneakerheads,
+   court culture. Black court, neon accents, editorial hype.
+   Not clean-minimalist. LOUD. Intentional. Premium streetwear energy.
+   ============================================================ */
+:root {
+  --black:      #080808;
+  --off-black:  #0f0f0f;
+  --card:       #141414;
+  --border:     #1e1e1e;
+  --border-mid: #2a2a2a;
+  --white:      #f8f8f8;
+  --grey:       #a0a0a0;
+  --muted:      #606060;
+  --neon:       #00ff88;
+  --neon-dim:   #005533;
+  --electric:   #4a9eff;
+  --elec-dim:   #1a3a6a;
+  --fire:       #ff4a1a;
+  --fire-dim:   #6a1a08;
+  --purple:     #9a4aff;
+  --gold:       #ffb800;
+  --gold-dim:   #4a3800;
+
+  --font-display: 'Bebas Neue', Impact, sans-serif;
+  --font-body:    'Barlow', sans-serif;
+
+  --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:20px;
+  --s6:24px; --s8:32px; --s10:40px; --s12:48px;
+  --s16:64px; --s20:80px; --s24:96px;
+}
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--black);color:var(--white);
+  font-family:var(--font-body);font-weight:300;
+  overflow-x:hidden;-webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+
+/* ============================================================
+   ANNOUNCEMENT
+   ============================================================ */
+.ann{background:var(--neon);padding:9px 0;overflow:hidden}
+.ann-track{
+  display:inline-flex;gap:64px;
+  animation:ticker 20s linear infinite;white-space:nowrap;
+}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.ann-item{
+  font-family:var(--font-display);font-size:13px;
+  letter-spacing:0.14em;color:var(--black);
+  display:flex;align-items:center;gap:14px;
+}
+.ann-dot{width:4px;height:4px;background:rgba(0,0,0,0.3);border-radius:50%}
+
+/* ============================================================
+   NAV
+   ============================================================ */
+nav{
+  position:sticky;top:0;z-index:500;
+  background:rgba(8,8,8,0.97);
+  backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border);
+}
+.nav-inner{
+  max-width:1440px;margin:0 auto;
+  padding:0 var(--s12);height:64px;
+  display:flex;align-items:center;
+  justify-content:space-between;gap:var(--s8);
+}
+.nav-logo{
+  font-family:var(--font-display);
+  font-size:28px;letter-spacing:0.1em;
+  color:var(--white);flex-shrink:0;
+}
+.nav-logo span{color:var(--neon)}
+.nav-links{
+  display:flex;gap:var(--s6);list-style:none;
+}
+.nav-links a{
+  font-family:var(--font-body);font-size:11px;
+  letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--muted);font-weight:500;transition:color 0.2s;
+}
+.nav-links a:hover,.nav-links a.active{color:var(--white)}
+.nav-links a.hot{color:var(--neon)}
+.nav-right{display:flex;align-items:center;gap:var(--s5);flex-shrink:0}
+.nav-right a{
+  font-size:11px;letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--muted);font-weight:500;transition:color 0.2s;
+}
+.nav-right a:hover{color:var(--white)}
+.nav-cart{
+  background:var(--neon) !important;color:var(--black) !important;
+  padding:9px 20px !important;font-size:11px !important;
+  letter-spacing:0.12em !important;font-weight:700 !important;
+  transition:background 0.2s !important;
+}
+.nav-cart:hover{background:#00cc66 !important}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{
+  position:relative;overflow:hidden;
+  max-width:1440px;margin:0 auto;
+  padding:var(--s4) var(--s12) 0;
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:var(--s3);min-height:600px;
+}
+.hero-main{
+  position:relative;overflow:hidden;
+  background:var(--card);
+}
+.hero-main-img{
+  width:100%;height:100%;object-fit:cover;
+  filter:brightness(0.6);
+  transition:transform 0.9s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+.hero-main:hover .hero-main-img{transform:scale(1.03)}
+.hero-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(
+    135deg,
+    rgba(8,8,8,0.85) 0%,
+    rgba(8,8,8,0.3) 55%,
+    transparent 100%
+  );
+}
+.hero-content{
+  position:absolute;
+  bottom:0;left:0;right:0;
+  padding:var(--s12);
+}
+.hero-kicker{
+  font-family:var(--font-display);font-size:13px;
+  letter-spacing:0.26em;color:var(--neon);
+  margin-bottom:var(--s3);
+  display:flex;align-items:center;gap:var(--s3);
+}
+.hero-kicker::before{content:'';display:block;width:24px;height:2px;background:var(--neon)}
+.hero-title{
+  font-family:var(--font-display);
+  font-size:clamp(60px,7vw,100px);
+  letter-spacing:0.04em;line-height:0.88;
+  color:var(--white);margin-bottom:var(--s4);
+}
+.hero-title span{color:var(--neon);display:block}
+.hero-sub{
+  font-size:15px;color:rgba(248,248,248,0.6);
+  line-height:1.7;max-width:420px;
+  margin-bottom:var(--s8);letter-spacing:0.03em;
+}
+.hero-ctas{display:flex;gap:var(--s4)}
+.btn-neon{
+  display:inline-block;background:var(--neon);color:var(--black);
+  padding:13px 32px;font-family:var(--font-display);
+  font-size:16px;letter-spacing:0.12em;
+  transition:background 0.2s,transform 0.15s;
+  border:2px solid var(--neon);
+}
+.btn-neon:hover{background:#00cc66;border-color:#00cc66;transform:translateY(-2px)}
+.btn-outline{
+  display:inline-block;background:transparent;color:var(--white);
+  padding:12px 28px;font-family:var(--font-display);
+  font-size:16px;letter-spacing:0.12em;
+  border:2px solid var(--border-mid);transition:border-color 0.2s;
+}
+.btn-outline:hover{border-color:var(--white)}
+.hero-stats{
+  display:flex;gap:var(--s8);margin-top:var(--s8);
+  padding-top:var(--s6);border-top:1px solid rgba(248,248,248,0.1);
+}
+.stat-n{
+  font-family:var(--font-display);font-size:36px;
+  color:var(--neon);line-height:1;letter-spacing:0.06em;
+}
+.stat-l{
+  font-size:10px;letter-spacing:0.14em;
+  text-transform:uppercase;color:var(--muted);margin-top:3px;
+}
+
+/* HERO SIDE */
+.hero-side{display:grid;grid-template-rows:1fr 1fr;gap:var(--s3)}
+.hs{position:relative;overflow:hidden;background:var(--card)}
+.hs img{
+  width:100%;height:100%;object-fit:cover;
+  filter:brightness(0.55);
+  transition:transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94),filter 0.3s;
+}
+.hs:hover img{transform:scale(1.06);filter:brightness(0.75)}
+.hs-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,8,8,0.85),transparent 55%)}
+.hs-info{position:absolute;bottom:var(--s4);left:var(--s5);right:var(--s5)}
+.hs-match{
+  font-size:9px;letter-spacing:0.22em;text-transform:uppercase;
+  color:var(--neon);margin-bottom:3px;font-weight:600;
+}
+.hs-name{
+  font-family:var(--font-display);font-size:22px;
+  letter-spacing:0.06em;color:var(--white);
+}
+.hs-price{font-size:13px;color:rgba(248,248,248,0.6);margin-top:2px}
+.hs-btn{
+  position:absolute;top:var(--s3);right:var(--s3);
+  background:var(--neon);color:var(--black);
+  font-family:var(--font-display);font-size:11px;
+  letter-spacing:0.1em;padding:5px 12px;
+  opacity:0;transition:opacity 0.2s;
+}
+.hs:hover .hs-btn{opacity:1}
+
+/* ============================================================
+   TRUST BAR
+   ============================================================ */
+.trust-bar{background:var(--off-black);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.trust-inner{
+  max-width:1440px;margin:0 auto;padding:0 var(--s12);
+  display:grid;grid-template-columns:repeat(4,1fr);
+}
+.trust-item{
+  display:flex;align-items:center;gap:var(--s4);
+  padding:var(--s5) var(--s6);
+  border-right:1px solid var(--border);
+}
+.trust-item:last-child{border-right:none}
+.trust-ico{font-size:18px;flex-shrink:0;opacity:0.7}
+.trust-t{
+  font-size:11px;letter-spacing:0.1em;text-transform:uppercase;
+  font-weight:600;color:var(--white);margin-bottom:1px;
+}
+.trust-d{font-size:11px;color:var(--muted);letter-spacing:0.03em}
+
+/* ============================================================
+   SECTIONS
+   ============================================================ */
+.section{max-width:1440px;margin:0 auto;padding:var(--s20) var(--s12)}
+.sec-kicker{
+  font-family:var(--font-display);font-size:11px;
+  letter-spacing:0.26em;color:var(--neon);
+  margin-bottom:var(--s3);
+  display:flex;align-items:center;gap:var(--s3);
+}
+.sec-kicker::before{content:'';display:block;width:16px;height:2px;background:var(--neon)}
+.sec-head{
+  display:flex;align-items:flex-end;
+  justify-content:space-between;margin-bottom:var(--s12);
+}
+.sec-title{
+  font-family:var(--font-display);
+  font-size:clamp(48px,5vw,72px);
+  letter-spacing:0.04em;color:var(--white);line-height:0.88;
+}
+.sec-title span{color:var(--neon)}
+.view-all{
+  font-family:var(--font-display);font-size:14px;
+  letter-spacing:0.1em;color:var(--neon);
+  display:flex;align-items:center;gap:6px;
+  border-bottom:1px solid var(--neon-dim);
+  padding-bottom:2px;transition:gap 0.2s;
+}
+.view-all:hover{gap:10px}
+
+/* ============================================================
+   SNEAKER MATCH HERO FEATURE
+   ============================================================ */
+.match-feature{
+  max-width:1440px;margin:0 auto;
+  padding:0 var(--s12);
+  display:grid;grid-template-columns:1fr 1.5fr;
+  gap:var(--s3);min-height:480px;
+}
+.match-content{
+  background:var(--card);border:1px solid var(--border);
+  padding:var(--s16) var(--s12);
+  display:flex;flex-direction:column;justify-content:center;
+}
+.match-shoe-brand{
+  font-family:var(--font-display);font-size:11px;
+  letter-spacing:0.24em;color:var(--electric);
+  margin-bottom:var(--s5);
+}
+.match-title{
+  font-family:var(--font-display);
+  font-size:clamp(48px,5vw,72px);
+  letter-spacing:0.04em;line-height:0.88;
+  color:var(--white);margin-bottom:var(--s5);
+}
+.match-desc{
+  font-size:14px;color:var(--grey);line-height:1.75;
+  max-width:340px;margin-bottom:var(--s8);
+}
+.match-shoe-links{
+  display:flex;flex-direction:column;gap:var(--s3);
+  margin-bottom:var(--s8);
+}
+.match-shoe-link{
+  display:flex;align-items:center;gap:var(--s4);
+  padding:var(--s4) var(--s5);
+  background:rgba(255,255,255,0.04);
+  border:1px solid var(--border-mid);
+  transition:border-color 0.2s;
+}
+.match-shoe-link:hover{border-color:var(--electric)}
+.match-shoe-link-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.match-shoe-link-name{
+  font-family:var(--font-display);font-size:15px;letter-spacing:0.06em;color:var(--white);
+}
+.match-shoe-link-arrow{margin-left:auto;color:var(--muted);font-size:12px}
+.match-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  grid-template-rows:1fr 1fr;gap:var(--s3);
+}
+.match-img-card{
+  position:relative;overflow:hidden;background:var(--card);
+}
+.match-img-card img{
+  width:100%;height:100%;object-fit:cover;
+  filter:brightness(0.7);
+  transition:filter 0.4s,transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+.match-img-card:hover img{filter:brightness(0.9);transform:scale(1.05)}
+.match-img-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(8,8,8,0.8),transparent 55%);
+}
+.match-img-info{
+  position:absolute;bottom:var(--s3);left:var(--s4);right:var(--s4);
+}
+.match-img-shoe{
+  font-size:8px;letter-spacing:0.16em;
+  text-transform:uppercase;color:var(--electric);
+  margin-bottom:2px;font-weight:600;
+}
+.match-img-name{
+  font-family:var(--font-display);font-size:14px;
+  letter-spacing:0.06em;color:var(--white);
+}
+
+/* ============================================================
+   PRODUCT GRID
+   ============================================================ */
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px}
+.prod-grid.five{grid-template-columns:repeat(5,1fr)}
+
+.p-card{
+  background:var(--card);border:1px solid var(--border);
+  position:relative;transition:border-color 0.25s,transform 0.25s;
+}
+.p-card:hover{border-color:var(--neon-dim);transform:translateY(-3px)}
+.p-card:hover .p-img{transform:scale(1.05)}
+.p-card:hover .p-cta{opacity:1;transform:translateY(0)}
+.p-card:hover .p-wish{opacity:1}
+
+.p-img-wrap{
+  aspect-ratio:1;overflow:hidden;
+  position:relative;background:#0a0a0a;
+}
+.p-img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+.p-badge{
+  position:absolute;top:var(--s3);left:var(--s3);
+  background:var(--neon);color:var(--black);
+  font-family:var(--font-display);font-size:11px;
+  letter-spacing:0.1em;padding:3px 9px;
+}
+.p-badge.fire{background:var(--fire);color:var(--white)}
+.p-badge.electric{background:var(--electric);color:var(--black)}
+.p-badge.sale{background:var(--gold);color:var(--black)}
+.p-badge.purple{background:var(--purple);color:var(--white)}
+.p-wish{
+  position:absolute;top:var(--s3);right:var(--s3);
+  width:30px;height:30px;
+  background:rgba(8,8,8,0.7);border:1px solid var(--border-mid);
+  display:flex;align-items:center;justify-content:center;
+  font-size:14px;color:var(--muted);
+  opacity:0;transition:opacity 0.2s;cursor:pointer;
+}
+.p-wish:hover{color:var(--neon)}
+.p-cta{
+  position:absolute;bottom:0;left:0;right:0;
+  background:rgba(0,255,136,0.95);color:var(--black);
+  text-align:center;padding:11px;
+  font-family:var(--font-display);font-size:13px;letter-spacing:0.12em;
+  opacity:0;transform:translateY(5px);
+  transition:opacity 0.25s,transform 0.25s;cursor:pointer;
+}
+.p-info{padding:var(--s4) var(--s4) var(--s5)}
+.p-material{
+  font-size:9px;letter-spacing:0.2em;text-transform:uppercase;
+  color:var(--neon);margin-bottom:4px;font-weight:600;
+}
+.p-name{
+  font-family:var(--font-display);font-size:17px;
+  letter-spacing:0.05em;color:var(--white);
+  margin-bottom:var(--s2);line-height:1.1;
+}
+.p-match{
+  font-size:10px;color:var(--muted);
+  letter-spacing:0.08em;margin-bottom:var(--s4);
+}
+.p-price-row{
+  display:flex;align-items:center;gap:var(--s3);
+  padding-top:var(--s3);border-top:1px solid var(--border);
+}
+.p-price{
+  font-family:var(--font-display);font-size:20px;
+  letter-spacing:0.06em;color:var(--white);
+}
+.p-orig{font-size:13px;color:var(--muted);text-decoration:line-through}
+.p-save{
+  font-size:9px;background:rgba(0,255,136,0.12);
+  color:var(--neon);padding:2px 7px;letter-spacing:0.08em;
+  border:1px solid var(--neon-dim);
+}
+
+/* ============================================================
+   MATERIAL BREAKDOWN — DARK SECTION
+   ============================================================ */
+.materials-section{background:var(--off-black);padding:var(--s20) 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.materials-inner{max-width:1440px;margin:0 auto;padding:0 var(--s12)}
+.materials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3);margin-top:var(--s12)}
+.mat-card{
+  background:var(--card);border:1px solid var(--border);
+  padding:var(--s8);
+  position:relative;overflow:hidden;
+  transition:border-color 0.2s;
+}
+.mat-card:hover{border-color:var(--neon-dim)}
+.mat-card::before{
+  content:attr(data-material);
+  position:absolute;right:-10px;bottom:-10px;
+  font-family:var(--font-display);font-size:80px;
+  color:rgba(255,255,255,0.03);letter-spacing:0.06em;
+  pointer-events:none;line-height:1;
+}
+.mat-icon{font-size:28px;margin-bottom:var(--s5);opacity:0.8}
+.mat-name{
+  font-family:var(--font-display);font-size:32px;
+  letter-spacing:0.08em;color:var(--white);
+  margin-bottom:var(--s3);
+}
+.mat-badge{
+  display:inline-block;margin-bottom:var(--s4);
+  font-size:9px;letter-spacing:0.14em;text-transform:uppercase;
+  padding:3px 10px;font-weight:600;
+}
+.mat-desc{font-size:13px;color:var(--grey);line-height:1.75;margin-bottom:var(--s6)}
+.mat-specs{display:flex;flex-direction:column;gap:var(--s2)}
+.mat-spec{
+  font-size:11px;color:var(--muted);letter-spacing:0.06em;
+  display:flex;align-items:center;gap:var(--s3);
+}
+.mat-spec::before{content:'—';color:var(--neon);font-size:10px}
+.mat-shop{
+  display:inline-block;margin-top:var(--s6);
+  font-family:var(--font-display);font-size:14px;letter-spacing:0.1em;
+  color:var(--neon);border-bottom:1px solid var(--neon-dim);padding-bottom:2px;
+  transition:border-color 0.2s;
+}
+.mat-shop:hover{border-color:var(--neon)}
+
+/* ============================================================
+   SNEAKER MATCH LOOKBOOK GRID
+   ============================================================ */
+.lookbook-grid{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  gap:3px;
+}
+.lb-card{
+  position:relative;overflow:hidden;
+  aspect-ratio:3/4;background:var(--card);display:block;
+}
+.lb-img{
+  width:100%;height:100%;object-fit:cover;
+  filter:brightness(0.7);
+  transition:filter 0.35s,transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+.lb-card:hover .lb-img{filter:brightness(0.95);transform:scale(1.08)}
+.lb-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(8,8,8,0.85),transparent 60%);
+}
+.lb-info{
+  position:absolute;bottom:0;left:0;right:0;
+  padding:var(--s3) var(--s4);
+}
+.lb-shoe{
+  font-size:8px;letter-spacing:0.14em;text-transform:uppercase;
+  color:var(--neon);margin-bottom:2px;font-weight:600;
+}
+.lb-name{
+  font-family:var(--font-display);font-size:12px;
+  letter-spacing:0.06em;color:var(--white);line-height:1.1;
+}
+
+/* ============================================================
+   LANE SELECTOR
+   ============================================================ */
+.lanes-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;height:320px}
+.lane{
+  position:relative;overflow:hidden;
+  background:var(--card);display:flex;
+  flex-direction:column;
+}
+.lane img{
+  width:100%;height:100%;object-fit:cover;
+  filter:brightness(0.55);
+  transition:filter 0.4s,transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94);
+  position:absolute;inset:0;
+}
+.lane:hover img{filter:brightness(0.8);transform:scale(1.06)}
+.lane-content{
+  position:relative;z-index:2;
+  padding:var(--s5);margin-top:auto;
+  background:linear-gradient(to top,rgba(8,8,8,0.92),transparent);
+}
+.lane-label{
+  font-family:var(--font-display);font-size:22px;
+  letter-spacing:0.08em;color:var(--white);
+  margin-bottom:3px;
+}
+.lane-sub{font-size:10px;color:var(--grey);letter-spacing:0.1em;margin-bottom:var(--s4)}
+.lane-cta{
+  display:inline-block;
+  font-family:var(--font-display);font-size:11px;letter-spacing:0.12em;
+  color:var(--neon);border-bottom:1px solid var(--neon-dim);padding-bottom:1px;
+}
+
+/* ============================================================
+   TESTIMONIALS
+   ============================================================ */
+.test-section{background:var(--off-black);padding:var(--s20) 0;border-top:1px solid var(--border)}
+.test-inner{max-width:1440px;margin:0 auto;padding:0 var(--s12)}
+.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px}
+.test-card{
+  background:var(--card);border:1px solid var(--border);
+  padding:var(--s8);
+}
+.test-stars{display:flex;gap:3px;margin-bottom:var(--s5)}
+.star{color:var(--gold);font-size:13px}
+.test-text{
+  font-size:15px;color:var(--grey);line-height:1.75;
+  margin-bottom:var(--s6);font-style:italic;
+}
+.test-author{
+  display:flex;align-items:center;gap:var(--s4);
+  padding-top:var(--s5);border-top:1px solid var(--border);
+}
+.test-av{
+  width:36px;height:36px;background:var(--neon-dim);
+  border:1px solid var(--neon-dim);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-display);font-size:14px;color:var(--neon);
+}
+.test-name{
+  font-family:var(--font-display);font-size:14px;
+  letter-spacing:0.08em;color:var(--white);margin-bottom:2px;
+}
+.test-detail{font-size:10px;color:var(--muted);letter-spacing:0.06em}
+.test-check{margin-left:auto;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--neon)}
+
+/* ============================================================
+   MARQUEE STRIP
+   ============================================================ */
+.marquee{background:var(--neon);padding:14px 0;overflow:hidden}
+.mq-track{display:inline-flex;gap:60px;animation:ticker 22s linear infinite;white-space:nowrap}
+.mq-item{
+  font-family:var(--font-display);font-size:18px;
+  letter-spacing:0.1em;color:var(--black);
+  display:flex;align-items:center;gap:14px;
+}
+.mq-sep{opacity:0.3;font-size:10px}
+
+/* ============================================================
+   NEWSLETTER
+   ============================================================ */
+.nl-section{background:var(--black);padding:var(--s20) 0;position:relative;overflow:hidden;border-top:1px solid var(--border)}
+.nl-section::before{
+  content:'TRAPN';position:absolute;right:-40px;top:50%;
+  transform:translateY(-50%);
+  font-family:var(--font-display);font-size:240px;
+  color:rgba(0,255,136,0.03);letter-spacing:0.06em;
+  pointer-events:none;line-height:1;
+}
+.nl-inner{max-width:600px;margin:0 auto;padding:0 var(--s12);text-align:center;position:relative;z-index:1}
+.nl-kicker{
+  font-family:var(--font-display);font-size:11px;
+  letter-spacing:0.26em;color:var(--neon);
+  margin-bottom:var(--s5);
+  display:flex;align-items:center;justify-content:center;gap:var(--s4);
+}
+.nl-kicker::before,.nl-kicker::after{content:'';display:block;width:16px;height:2px;background:var(--neon)}
+.nl-title{
+  font-family:var(--font-display);
+  font-size:clamp(48px,5vw,72px);
+  letter-spacing:0.06em;color:var(--white);
+  line-height:0.88;margin-bottom:var(--s5);
+}
+.nl-title span{color:var(--neon)}
+.nl-desc{font-size:14px;color:var(--muted);line-height:1.75;margin-bottom:var(--s8)}
+.nl-form{display:flex;max-width:440px;margin:0 auto}
+.nl-input{
+  flex:1;background:rgba(255,255,255,0.05);
+  border:1px solid var(--border-mid);border-right:none;
+  padding:13px 18px;color:var(--white);
+  font-family:var(--font-body);font-size:13px;
+  outline:none;transition:border-color 0.2s;letter-spacing:0.06em;
+}
+.nl-input::placeholder{color:var(--muted)}
+.nl-input:focus{border-color:var(--neon-dim)}
+.nl-btn{
+  background:var(--neon);border:1px solid var(--neon);
+  color:var(--black);padding:13px 24px;
+  font-family:var(--font-display);font-size:15px;letter-spacing:0.1em;
+  font-weight:700;cursor:pointer;transition:background 0.2s;white-space:nowrap;
+}
+.nl-btn:hover{background:#00cc66}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer{background:#050505;border-top:1px solid var(--border);padding:var(--s16) 0 var(--s8)}
+.footer-inner{max-width:1440px;margin:0 auto;padding:0 var(--s12)}
+.footer-top{
+  display:grid;grid-template-columns:2fr 1fr 1fr 1fr;
+  gap:var(--s16);padding-bottom:var(--s12);
+  border-bottom:1px solid var(--border);margin-bottom:var(--s8);
+}
+.f-logo{
+  font-family:var(--font-display);font-size:32px;
+  letter-spacing:0.1em;color:var(--white);margin-bottom:3px;display:block;
+}
+.f-logo span{color:var(--neon)}
+.f-tagline{
+  font-size:10px;letter-spacing:0.18em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:var(--s6);
+}
+.f-desc{font-size:13px;color:rgba(255,255,255,0.3);line-height:1.8;max-width:240px;margin-bottom:var(--s8)}
+.f-socials{display:flex;gap:var(--s2)}
+.f-soc{
+  width:34px;height:34px;
+  background:rgba(255,255,255,0.04);border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  font-size:11px;font-weight:600;color:var(--muted);
+  transition:all 0.2s;
+}
+.f-soc:hover{background:var(--neon);border-color:var(--neon);color:var(--black)}
+.f-col-title{
+  font-family:var(--font-display);font-size:14px;
+  letter-spacing:0.14em;color:var(--white);margin-bottom:var(--s5);
+}
+.f-links{list-style:none;display:flex;flex-direction:column;gap:var(--s3)}
+.f-links a{font-size:12px;color:var(--muted);letter-spacing:0.06em;transition:color 0.2s}
+.f-links a:hover{color:var(--neon)}
+.footer-bottom{
+  display:flex;align-items:center;justify-content:space-between;
+  padding-top:var(--s6);border-top:1px solid var(--border);
+}
+.f-copy{font-size:11px;color:rgba(255,255,255,0.15);letter-spacing:0.08em}
+.f-pays{display:flex;gap:var(--s2)}
+.f-pay{
+  background:rgba(255,255,255,0.04);border:1px solid var(--border);
+  padding:4px 9px;font-size:9px;letter-spacing:0.1em;
+  text-transform:uppercase;color:var(--muted);
+}
+
+/* ============================================================
+   SPEC PANEL
+   ============================================================ */
+.spec-section{background:var(--off-black);border-top:1px solid var(--border);padding:var(--s20) 0}
+.spec-inner{max-width:1440px;margin:0 auto;padding:0 var(--s12)}
+.spec-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;margin-top:var(--s10)}
+.spec-card{background:var(--card);border:1px solid var(--border);padding:var(--s8)}
+.spec-t{font-family:var(--font-display);font-size:12px;letter-spacing:0.2em;color:var(--neon);margin-bottom:var(--s6)}
+.sw{display:flex;align-items:center;gap:var(--s3);margin-bottom:var(--s3)}
+.sw-c{width:26px;height:26px;border-radius:2px;border:1px solid var(--border);flex-shrink:0}
+.sw-n{font-size:11px;font-weight:600;color:var(--white);margin-bottom:1px}
+.sw-h{font-size:10px;color:var(--muted);letter-spacing:0.06em}
+
+/* MOBILE */
+.mobile-section{background:var(--black);border-top:1px solid var(--border);padding:var(--s20) 0}
+.mobile-inner{max-width:1440px;margin:0 auto;padding:0 var(--s12)}
+.mobile-grid{display:grid;grid-template-columns:1fr 2fr;gap:var(--s16);align-items:start;margin-top:var(--s10)}
+.mob-title{
+  font-family:var(--font-display);font-size:48px;
+  letter-spacing:0.04em;color:var(--white);
+  line-height:0.9;margin-bottom:var(--s5);
+}
+.mob-title span{color:var(--neon)}
+.mob-body{font-size:13px;color:var(--muted);line-height:1.8;margin-bottom:var(--s8)}
+.mob-specs{display:flex;flex-direction:column;gap:var(--s3)}
+.mob-spec{font-size:12px;color:var(--grey);display:flex;align-items:flex-start;gap:var(--s3)}
+.mob-spec::before{content:'—';color:var(--neon);flex-shrink:0}
+.phones{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s5)}
+.phone{background:var(--off-black);border-radius:28px;padding:11px;border:1px solid var(--border);box-shadow:0 24px 60px rgba(0,0,0,0.5)}
+.phone-screen{background:var(--black);border-radius:18px;overflow:hidden;aspect-ratio:9/19;display:flex;flex-direction:column}
+.ph-nav{background:var(--black);border-bottom:1px solid var(--border);padding:9px 12px;display:flex;align-items:center;justify-content:space-between}
+.ph-logo{font-family:var(--font-display);font-size:16px;letter-spacing:0.1em;color:var(--white)}
+.ph-logo span{color:var(--neon)}
+.ph-hero{flex-shrink:0;height:155px;background:var(--card);position:relative;overflow:hidden}
+.ph-hero img{width:100%;height:100%;object-fit:cover;filter:brightness(0.65)}
+.ph-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,8,8,0.9),transparent)}
+.ph-hero-text{position:absolute;bottom:10px;left:10px}
+.ph-htag{font-size:7px;letter-spacing:0.2em;text-transform:uppercase;color:var(--neon);margin-bottom:3px;font-family:var(--font-display)}
+.ph-htitle{font-family:var(--font-display);font-size:20px;letter-spacing:0.06em;color:var(--white);line-height:0.95}
+.ph-content{padding:10px;flex:1;background:var(--off-black)}
+.ph-sec{font-family:var(--font-display);font-size:8px;letter-spacing:0.18em;color:var(--neon);margin-bottom:8px}
+.ph-pgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.ph-p{background:var(--card);border:1px solid var(--border);overflow:hidden}
+.ph-pimg{height:60px;background:var(--black);overflow:hidden}
+.ph-pimg img{width:100%;height:100%;object-fit:cover;filter:brightness(0.75)}
+.ph-pinfo{padding:5px 6px}
+.ph-pname{font-family:var(--font-display);font-size:10px;letter-spacing:0.06em;color:var(--white);margin-bottom:2px;line-height:1.1}
+.ph-pprice{font-size:9px;color:var(--neon);font-family:var(--font-display);letter-spacing:0.06em}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.fu{animation:fadeUp 0.65s cubic-bezier(0.25,0.46,0.45,0.94) both;opacity:0}
+.d1{animation-delay:.1s}.d2{animation-delay:.22s}
+.d3{animation-delay:.34s}.d4{animation-delay:.46s}
+</style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT -->
+<div class="ann">
+  <div class="ann-track">
+    <span class="ann-item"><span class="ann-dot"></span>New Here? Get 15% Off Your First Pair</span>
+    <span class="ann-item"><span class="ann-dot"></span>Ready-to-Ship Orders Leave in 0–3 Days</span>
+    <span class="ann-item"><span class="ann-dot"></span>Sneaker Match Guide: Jordan · Kobe · Ja Morant</span>
+    <span class="ann-item"><span class="ann-dot"></span>New Drops Available Now</span>
+    <span class="ann-item"><span class="ann-dot"></span>New Here? Get 15% Off Your First Pair</span>
+    <span class="ann-item"><span class="ann-dot"></span>Ready-to-Ship Orders Leave in 0–3 Days</span>
+    <span class="ann-item"><span class="ann-dot"></span>Sneaker Match Guide: Jordan · Kobe · Ja Morant</span>
+    <span class="ann-item"><span class="ann-dot"></span>New Drops Available Now</span>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">TRAP<span>N™</span></div>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#" class="hot">New Drops</a></li>
+      <li><a href="#">Sneaker Match</a></li>
+      <li><a href="#">Rewards</a></li>
+      <li><a href="#">Fit Wishlist</a></li>
+      <li><a href="#">Sneaker Releases</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="#">Search</a>
+      <a href="#">Account</a>
+      <a href="#" class="nav-cart">Cart (0)</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-main">
+    <img class="hero-main-img"
+      src="https://trapnshorts.com/cdn/shop/files/WHATTHE_600x.jpg?v=1769903134"
+      alt="TRAPN Shorts">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-kicker fu">Built for Hoopers. Styled for Sneakerheads.</div>
+      <h1 class="hero-title fu d1">SHORTS<br>THAT<br><span>MATCH</span></h1>
+      <p class="hero-sub fu d2">Basketball shorts engineered to match your Jordans, Kobes, and Ja Morant releases. Pro Mesh · Soft-QD · GO materials. Real pockets. Real fit.</p>
+      <div class="hero-ctas fu d3">
+        <a href="#" class="btn-neon">Find Your Match</a>
+        <a href="#" class="btn-outline">Shop All Shorts</a>
+      </div>
+      <div class="hero-stats fu d4">
+        <div><div class="stat-n">40+</div><div class="stat-l">Sneaker Matches</div></div>
+        <div><div class="stat-n">3</div><div class="stat-l">Premium Materials</div></div>
+        <div><div class="stat-n">0–3</div><div class="stat-l">Day Shipping</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-side">
+    <div class="hs">
+      <img src="https://trapnshorts.com/cdn/shop/files/rivals-mj-main.png?v=1772685605&width=800" alt="RIVALS MJ Edition">
+      <div class="hs-overlay"></div>
+      <div class="hs-info">
+        <div class="hs-match">Matches Jordan 1 Chicago</div>
+        <div class="hs-name">RIVALS: MJ Edition</div>
+        <div class="hs-price">$33.00 — Mesh Pro</div>
+      </div>
+      <div class="hs-btn">Shop →</div>
+    </div>
+    <div class="hs">
+      <img src="https://trapnshorts.com/cdn/shop/files/red-mamba-mesh-main.png?v=1775183407&width=800" alt="Red Mamba">
+      <div class="hs-overlay"></div>
+      <div class="hs-info">
+        <div class="hs-match">Matches Jordan 12 Bloodline</div>
+        <div class="hs-name">Red Mamba Mesh</div>
+        <div class="hs-price">$30.00 — Mesh Pro</div>
+      </div>
+      <div class="hs-btn">Shop →</div>
+    </div>
+  </div>
+</div>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item"><div class="trust-ico">⚡</div><div><div class="trust-t">0–3 Day RTS Shipping</div><div class="trust-d">Ready-to-ship in stock</div></div></div>
+    <div class="trust-item"><div class="trust-ico">🏀</div><div><div class="trust-t">Pro Hoop Fit</div><div class="trust-d">Zero thigh-choke, full-court comfort</div></div></div>
+    <div class="trust-item"><div class="trust-ico">👟</div><div><div class="trust-t">Sneaker-Match Colorways</div><div class="trust-d">Jordan · Kobe · Ja · KD</div></div></div>
+    <div class="trust-item"><div class="trust-ico">💰</div><div><div class="trust-t">Fair Pricing</div><div class="trust-d">Pro build, not pro-team markup</div></div></div>
+  </div>
+</div>
+
+<!-- SNEAKER MATCH FEATURE -->
+<div style="max-width:1440px;margin:0 auto;padding:var(--s20) var(--s12) 0">
+  <div class="sec-kicker">The Core Concept</div>
+  <div class="sec-head" style="margin-bottom:var(--s8)">
+    <h2 class="sec-title">SHOP BY<br><span>SNEAKER</span></h2>
+    <a href="#" class="view-all">Full Match Guide →</a>
+  </div>
+</div>
+<div class="match-feature">
+  <div class="match-content">
+    <div class="match-shoe-brand">Start with the shoe.</div>
+    <h2 class="match-title">FIND<br>YOUR<br>MATCH</h2>
+    <p class="match-desc">Browse curated fits built around the latest Jordans, Kobes, Ja Morant drops, and more. Every look starts with the kicks.</p>
+    <div class="match-shoe-links">
+      <a href="#" class="match-shoe-link">
+        <div class="match-shoe-link-dot" style="background:var(--fire)"></div>
+        <span class="match-shoe-link-name">JORDAN MATCHES</span>
+        <span class="match-shoe-link-arrow">→</span>
+      </a>
+      <a href="#" class="match-shoe-link">
+        <div class="match-shoe-link-dot" style="background:var(--neon)"></div>
+        <span class="match-shoe-link-name">KOBE MATCHES</span>
+        <span class="match-shoe-link-arrow">→</span>
+      </a>
+      <a href="#" class="match-shoe-link">
+        <div class="match-shoe-link-dot" style="background:var(--electric)"></div>
+        <span class="match-shoe-link-name">JA MORANT MATCHES</span>
+        <span class="match-shoe-link-arrow">→</span>
+      </a>
+      <a href="#" class="match-shoe-link">
+        <div class="match-shoe-link-dot" style="background:var(--purple)"></div>
+        <span class="match-shoe-link-name">NEW RELEASES</span>
+        <span class="match-shoe-link-arrow">→</span>
+      </a>
+    </div>
+    <a href="#" class="btn-neon" style="display:inline-block">Explore All Matches</a>
+  </div>
+  <div class="match-grid">
+    <div class="match-img-card">
+      <img src="https://trapnshorts.com/cdn/shop/files/AJ11-LOW-WHITE-UNI-PINK-SKIES-SMURF-HOOD.jpg?v=1776127895&width=700" alt="Jordan 11 Low Pink Skies">
+      <div class="match-img-overlay"></div>
+      <div class="match-img-info">
+        <div class="match-img-shoe">Jordan 11 Low University</div>
+        <div class="match-img-name">Pink Skies Match</div>
+      </div>
+    </div>
+    <div class="match-img-card">
+      <img src="https://trapnshorts.com/cdn/shop/files/AJ4-BRED-BONES-BLACK-HOOD.jpg?v=1776031751&width=700" alt="Jordan 4 Bred Bones">
+      <div class="match-img-overlay"></div>
+      <div class="match-img-info">
+        <div class="match-img-shoe">Jordan 4 Bred</div>
+        <div class="match-img-name">Bones Match</div>
+      </div>
+    </div>
+    <div class="match-img-card">
+      <img src="https://trapnshorts.com/cdn/shop/files/KOBE-6-DODGERS-WILDCAT-BLUE-HOOD.avif?v=1775697650&width=700" alt="Kobe 6 Dodgers">
+      <div class="match-img-overlay"></div>
+      <div class="match-img-info">
+        <div class="match-img-shoe">Kobe 6 Dodgers</div>
+        <div class="match-img-name">Wildcat Blue Match</div>
+      </div>
+    </div>
+    <div class="match-img-card">
+      <img src="https://trapnshorts.com/cdn/shop/files/JA-3-JURASSIC-GRINCH-PRO-BOLT-HOOD.jpg?v=1775867295&width=700" alt="Ja 3 Jurassic">
+      <div class="match-img-overlay"></div>
+      <div class="match-img-info">
+        <div class="match-img-shoe">Ja 3 Jurassic</div>
+        <div class="match-img-name">Grinch Pro Match</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHAT'S TRENDING -->
+<section class="section">
+  <div class="sec-kicker">What's Moving</div>
+  <div class="sec-head">
+    <h2 class="sec-title">TRENDING<br><span>DROPS</span></h2>
+    <a href="#" class="view-all">View All 36 →</a>
+  </div>
+  <div class="prod-grid">
+
+    <div class="p-card">
+      <div class="p-img-wrap">
+        <img class="p-img" src="https://trapnshorts.com/cdn/shop/files/APOLLOSKY.jpg?v=1765491281&width=600" alt="Apollo Sky">
+        <div class="p-badge electric">Soft-QD</div>
+        <div class="p-wish">♡</div>
+        <div class="p-cta">Add to Cart</div>
+      </div>
+      <div class="p-info">
+        <div class="p-material">Soft-QD · Basketball Shorts</div>
+        <div class="p-name">Apollo Sky</div>
+        <div class="p-match">Matches Jordan 1 University Blue</div>
+        <div class="p-price-row"><span class="p-price">$30</span></div>
+      </div>
+    </div>
+
+    <div class="p-card">
+      <div class="p-img-wrap">
+        <img class="p-img" src="https://trapnshorts.com/cdn/shop/files/game-winner.png?v=1763931308&width=600" alt="Game-Winner">
+        <div class="p-badge">Mesh Pro</div>
+        <div class="p-wish">♡</div>
+        <div class="p-cta">Add to Cart</div>
+      </div>
+      <div class="p-info">
+        <div class="p-material">Mesh Pro · Basketball Shorts</div>
+        <div class="p-name">Game-Winner</div>
+        <div class="p-match">Matches Jordan 4 Bred</div>
+        <div class="p-price-row"><span class="p-price">$30</span></div>
+      </div>
+    </div>
+
+    <div class="p-card">
+      <div class="p-img-wrap">
+        <img class="p-img" src="https://trapnshorts.com/cdn/shop/files/KAPMAN25.png?v=1763941725&width=600" alt="Kapman Maze Runner">
+        <div class="p-badge">Mesh Pro</div>
+        <div class="p-wish">♡</div>
+        <div class="p-cta">Add to Cart</div>
+      </div>
+      <div class="p-info">
+        <div class="p-material">Mesh Pro · Basketball Shorts</div>
+        <div class="p-name">Kapman Maze Runner</div>
+        <div class="p-match">Matches Jordan 4 Bred</div>
+        <div class="p-price-row"><span class="p-price">$30</span></div>
+      </div>
+    </div>
+
+    <div class="p-card">
+      <div class="p-img-wrap">
+        <img class="p-img" src="https://trapnshorts.com/cdn/shop/files/ORANGE_MAMBA_MAIN.png?v=1773170078&width=600" alt="Orange Mamba">
+        <div class="p-badge fire">Mamba</div>
+        <div class="p-wish">♡</div>
+        <div class="p-cta">Add to Cart</div>
+      </div>
+      <div class="p-info">
+        <div class="p-material">Mesh Pro · Basketball Shorts</div>
+        <div class="p-name">Orange Mamba</div>
+        <div class="p-match">Matches Kobe 6 Total Orange</div>
+        <div class="p-price-row"><span class="p-price">$30</span></div>
+      </div>
+    </div>
+
+    <div class="p-card">
+      <div class="p-img-wrap">
+        <img class="p-img" src="https://trapnshorts.com/cdn/shop/files/rivals-mamba-main.png?v=1772400464&width=600" alt="RIVALS Mamba">
+        <div class="p-badge fire">Mamba</div>
+        <div class="p-wish">♡</div>
+        <div class="p-cta">Add to Cart</div>
+      </div>
+      <div class="p-info">
+        <div class="p-material">Mesh Pro · Basketball Shorts</div>
+        <div class="p-name">RIVALS: Mamba Edition</div>
+        <div class="p-match">Matches Kobe 6 Grinch</div>
+        <div class="p-price-row"><span class="p-price">$33</span></div>
+      </div>
+    </div>
+
+    <div class="p-card">
+      <div class="p-img-wrap">
+        <img class="p-img" src="https://trapnshorts.com/cdn/shop/files/rivals-mj-main.png?v=1772685605&width=600" alt="RIVALS MJ">
+        <div class="p-badge fire">MJ</div>
+        <div class="p-wish">♡</div>
+        <div class="p-cta">Add to Cart</div>
+      </div>
+      <div class="p-info">
+        <div class="p-material">Mesh Pro · Basketball Shorts</div>
+        <div class="p-name">RIVALS: MJ Edition</div>
+        <div class="p-match">Matches Jordan 1 Chicago</div>
+        <div class="p-price-row"><span class="p-price">$33</span></div>
+      </div>
+    </div>
+
+    <div class="p-card">
+      <div class="p-img-wrap">
+        <img class="p-img" src="https://trapnshorts.com/cdn/shop/files/purple-tape-main.png?v=1772402241&width=600" alt="Purple Tape">
+        <div class="p-badge purple">Mesh Pro</div>
+        <div class="p-wish">♡</div>
+        <div class="p-cta">Add to Cart</div>
+      </div>
+      <div class="p-info">
+        <div class="p-material">Mesh Pro · Basketball Shorts</div>
+        <div class="p-name">Purple Tape</div>
+        <div class="p-match">Matches Ja 3 Price of Admission</div>
+        <div class="p-price-row"><span class="p-price">$30</span></div>
+      </div>
+    </div>
+
+    <div class="p-card">
+      <div class="p-img-wrap">
+        <img class="p-img" src="https://trapnshorts.com/cdn/shop/files/F13.jpg?v=1758814284&width=600" alt="Jason Mask">
+        <div class="p-badge sale">Sale</div>
+        <div class="p-wish">♡</div>
+        <div class="p-cta">Add to Cart</div>
+      </div>
+      <div class="p-info">
+        <div class="p-material">Soft-QD · Basketball Shorts</div>
+        <div class="p-name">Jason Mask</div>
+        <div class="p-match">Matches Jordan 12 Taxi</div>
+        <div class="p-price-row">
+          <span class="p-price">$30</span>
+          <span class="p-orig">$35</span>
+          <span class="p-save">Save $5</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- JOGGERS ROW -->
+<section class="section" style="padding-top:0">
+  <div class="sec-kicker">Loopback Terry Cotton</div>
+  <div class="sec-head">
+    <h2 class="sec-title">JOGGER<br><span>SHORTS</span></h2>
+    <a href="#" class="view-all">Shop Joggers →</a>
+  </div>
+  <div class="prod-grid five">
+    <div class="p-card">
+      <div class="p-img-wrap">
+        <img class="p-img" src="https://trapnshorts.com/cdn/shop/files/JOGGER_LOOP_BLUE_ACID-MAIN.png?v=1772849231&width=600" alt="Blue Acid">
+        <div class="p-badge sale">Sale</div>
+        <div class="p-wish">♡</div>
+        <div class="p-cta">Add to Cart</div>
+      </div>
+      <div class="p-info">
+        <div class="p-material">Loopback Terry · Jogger</div>
+        <div class="p-name">Blue Acid</div>
+        <div class="p-price-row"><span class="p-price">$35</span><span class="p-orig">$45</span></div>
+      </div>
+    </div>
+    <div class="p-card">
+      <div class="p-img-wrap">
+        <img class="p-img" src="https://trapnshorts.com/cdn/shop/files/JOGGER-LOOP-MAIN.png?v=1772847724&width=600" alt="Gray Loopback">
+        <div class="p-badge sale">Sale</div>
+        <div class="p-wish">♡</div>
+        <div class="p-cta">Add to Cart</div>
+      </div>
+      <div class="p-info">
+        <div class="p-material">Loopback Terry · Jogger</div>
+        <div class="p-name">Gray Loop</div>
+        <div class="p-price-row"><span class="p-price">$35</span><span class="p-orig">$45</span></div>
+      </div>
+    </div>
+    <div class="p-card">
+      <div class="p-img-wrap">
+        <img class="p-img" src="https://trapnshorts.com/cdn/shop/files/JOGGER-LOOP-SKY-MAIN.png?v=1772844799&width=600" alt="Sky Blue">
+        <div class="p-badge sale">Sale</div>
+        <div class="p-wish">♡</div>
+        <div class="p-cta">Add to Cart</div>
+      </div>
+      <div class="p-info">
+        <div class="p-material">Loopback Terry · Jogger</div>
+        <div class="p-name">Sky Blue Loop</div>
+        <div class="p-price-row"><span class="p-price">$35</span><span class="p-orig">$45</span></div>
+      </div>
+    </div>
+    <div class="p-card">
+      <div class="p-img-wrap">
+        <img class="p-img" src="https://trapnshorts.com/cdn/shop/files/JOGGERS-LOOP-PURPLE-MAIN.png?v=1772848293&width=600" alt="Purple Loop">
+        <div class="p-badge sale">Sale</div>
+        <div class="p-wish">♡</div>
+        <div class="p-cta">Add to Cart</div>
+      </div>
+      <div class="p-info">
+        <div class="p-material">Loopback Terry · Jogger</div>
+        <div class="p-name">Purple Loop</div>
+        <div class="p-price-row"><span class="p-price">$35</span><span class="p-orig">$45</span></div>
+      </div>
+    </div>
+    <div class="p-card">
+      <div class="p-img-wrap">
+        <img class="p-img" src="https://trapnshorts.com/cdn/shop/files/JOGGER-LOOP-RED-ACID-MAIN.png?v=1772848913&width=600" alt="Red Acid">
+        <div class="p-badge sale">Sale</div>
+        <div class="p-wish">♡</div>
+        <div class="p-cta">Add to Cart</div>
+      </div>
+      <div class="p-info">
+        <div class="p-material">Loopback Terry · Jogger</div>
+        <div class="p-name">Red Acid Loop</div>
+        <div class="p-price-row"><span class="p-price">$35</span><span class="p-orig">$45</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MATERIAL BREAKDOWN -->
+<div class="materials-section">
+  <div class="materials-inner">
+    <div class="sec-kicker">Know Your Fabric</div>
+    <div class="sec-head">
+      <h2 class="sec-title">PICK YOUR<br><span>MATERIAL</span></h2>
+    </div>
+    <div class="materials-grid">
+      <div class="mat-card" data-material="MESH">
+        <div class="mat-icon">🏀</div>
+        <div class="mat-name">PRO MESH</div>
+        <div class="mat-badge" style="background:rgba(0,255,136,0.1);color:var(--neon);border:1px solid var(--neon-dim)">Classic Court Feel</div>
+        <p class="mat-desc">Heavy-weight pro mesh — the real-deal NBA-style construction. Breathable, durable, moves with you in every direction.</p>
+        <div class="mat-specs">
+          <div class="mat-spec">Heavy mesh weave — authentic pro construction</div>
+          <div class="mat-spec">Breathable on court, durable everywhere</div>
+          <div class="mat-spec">Deep pockets + back zip pocket</div>
+          <div class="mat-spec">Bold colorways for sneaker matching</div>
+        </div>
+        <a href="#" class="mat-shop">Shop Mesh →</a>
+      </div>
+      <div class="mat-card" data-material="SOFTQD">
+        <div class="mat-icon">⚡</div>
+        <div class="mat-name">SOFT-QD</div>
+        <div class="mat-badge" style="background:rgba(74,158,255,0.1);color:var(--electric);border:1px solid var(--elec-dim)">Smooth Quick-Dry</div>
+        <p class="mat-desc">Smooth, stretchy, fast-drying fabric that feels like butter. Four-way flex, runs light when wet. Court to street without changing.</p>
+        <div class="mat-specs">
+          <div class="mat-spec">Soft quick-dry — smooth exterior</div>
+          <div class="mat-spec">4-way flex stretch construction</div>
+          <div class="mat-spec">Stays light when wet, dries fast</div>
+          <div class="mat-spec">Perfect for both court and casual</div>
+        </div>
+        <a href="#" class="mat-shop">Shop Soft-QD →</a>
+      </div>
+      <div class="mat-card" data-material="GODRIP">
+        <div class="mat-icon">🔥</div>
+        <div class="mat-name">GO DRY</div>
+        <div class="mat-badge" style="background:rgba(255,74,26,0.1);color:var(--fire);border:1px solid var(--fire-dim)">4-Way Flex</div>
+        <p class="mat-desc">Performance fabric engineered for movement. Ultra-light, fast-drying, phone-safe pocket depth. GO material = full send on court.</p>
+        <div class="mat-specs">
+          <div class="mat-spec">Ultra-lightweight GO fabric</div>
+          <div class="mat-spec">4-way stretch — move without restriction</div>
+          <div class="mat-spec">Phone-safe deep pockets</div>
+          <div class="mat-spec">Fastest drying of the TRAPN™ lineup</div>
+        </div>
+        <a href="#" class="mat-shop">Shop GO Dry →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- LOOKBOOK MARQUEE -->
+<div class="marquee">
+  <div class="mq-track">
+    <span class="mq-item">Jordan 11 Low<span class="mq-sep"> ◆ </span></span>
+    <span class="mq-item">Jordan 4 Bred<span class="mq-sep"> ◆ </span></span>
+    <span class="mq-item">Kobe 6 Grinch<span class="mq-sep"> ◆ </span></span>
+    <span class="mq-item">Ja 3 Jurassic<span class="mq-sep"> ◆ </span></span>
+    <span class="mq-item">Jordan 12 Bloodline<span class="mq-sep"> ◆ </span></span>
+    <span class="mq-item">Kobe 6 Total Orange<span class="mq-sep"> ◆ </span></span>
+    <span class="mq-item">Jordan 1 Chicago<span class="mq-sep"> ◆ </span></span>
+    <span class="mq-item">Jordan 11 Low<span class="mq-sep"> ◆ </span></span>
+    <span class="mq-item">Jordan 4 Bred<span class="mq-sep"> ◆ </span></span>
+    <span class="mq-item">Kobe 6 Grinch<span class="mq-sep"> ◆ </span></span>
+    <span class="mq-item">Ja 3 Jurassic<span class="mq-sep"> ◆ </span></span>
+    <span class="mq-item">Jordan 12 Bloodline</span>
+  </div>
+</div>
+
+<!-- LOOKBOOK GRID -->
+<section class="section">
+  <div class="sec-kicker">Latest Fits</div>
+  <div class="sec-head">
+    <h2 class="sec-title">SNEAKER<br><span>LOOKBOOK</span></h2>
+    <a href="#" class="view-all">Explore All Matches →</a>
+  </div>
+  <div class="lookbook-grid">
+    <a href="#" class="lb-card">
+      <img class="lb-img" src="https://trapnshorts.com/cdn/shop/files/AJ4-BRED-BONES-BLACK-HOOD.jpg?v=1776031751&width=400" alt="">
+      <div class="lb-overlay"></div>
+      <div class="lb-info"><div class="lb-shoe">Jordan 4 Bred</div><div class="lb-name">Bones</div></div>
+    </a>
+    <a href="#" class="lb-card">
+      <img class="lb-img" src="https://trapnshorts.com/cdn/shop/files/AJ12-BLOODLINE-RED-MAMBA-BLACK-HOOD.avif?v=1775701236&width=400" alt="">
+      <div class="lb-overlay"></div>
+      <div class="lb-info"><div class="lb-shoe">Jordan 12 Bloodline</div><div class="lb-name">Red Mamba</div></div>
+    </a>
+    <a href="#" class="lb-card">
+      <img class="lb-img" src="https://trapnshorts.com/cdn/shop/files/KOBE-6-DODGERS-WILDCAT-BLUE-HOOD.avif?v=1775697650&width=400" alt="">
+      <div class="lb-overlay"></div>
+      <div class="lb-info"><div class="lb-shoe">Kobe 6 Dodgers</div><div class="lb-name">Wildcat Blue</div></div>
+    </a>
+    <a href="#" class="lb-card">
+      <img class="lb-img" src="https://trapnshorts.com/cdn/shop/files/JA-3-ZOMBIE-ZOMBIE-PRO-RED-HOOD.avif?v=1775704206&width=400" alt="">
+      <div class="lb-overlay"></div>
+      <div class="lb-info"><div class="lb-shoe">Ja 3 Zombie</div><div class="lb-name">Trap Zombie</div></div>
+    </a>
+    <a href="#" class="lb-card">
+      <img class="lb-img" src="https://trapnshorts.com/cdn/shop/files/AJ4-LAKESHOW-ALL-STARS-PURP-HOOD.avif?v=1775705161&width=400" alt="">
+      <div class="lb-overlay"></div>
+      <div class="lb-info"><div class="lb-shoe">Jordan 4 Lakeshow</div><div class="lb-name">All Stars</div></div>
+    </a>
+    <a href="#" class="lb-card">
+      <img class="lb-img" src="https://trapnshorts.com/cdn/shop/files/KOBE-6-GRINCH-ZOMBIE-PRO-BOLT-HOOD.avif?v=1775707027&width=400" alt="">
+      <div class="lb-overlay"></div>
+      <div class="lb-info"><div class="lb-shoe">Kobe 6 Grinch</div><div class="lb-name">Trap Grinch Pro</div></div>
+    </a>
+    <a href="#" class="lb-card">
+      <img class="lb-img" src="https://trapnshorts.com/cdn/shop/files/AJ1-CHICAGO-GOAT-WHITE-HOOD.avif?v=1775702542&width=400" alt="">
+      <div class="lb-overlay"></div>
+      <div class="lb-info"><div class="lb-shoe">Jordan 1 Chicago</div><div class="lb-name">Red Jogger</div></div>
+    </a>
+    <a href="#" class="lb-card">
+      <img class="lb-img" src="https://trapnshorts.com/cdn/shop/files/KOBE-6-TOTAL-ORANGE-MAMBA-ORANGE-HOOD.avif?v=1775707073&width=400" alt="">
+      <div class="lb-overlay"></div>
+      <div class="lb-info"><div class="lb-shoe">Kobe 6 Total Orange</div><div class="lb-name">Orange Mamba</div></div>
+    </a>
+    <a href="#" class="lb-card">
+      <img class="lb-img" src="https://trapnshorts.com/cdn/shop/files/AJ13-CHICAGO-MJ-RIVALS-RED-HOOD.avif?v=1775706165&width=400" alt="">
+      <div class="lb-overlay"></div>
+      <div class="lb-info"><div class="lb-shoe">Jordan 13 True Red</div><div class="lb-name">RIVALS MJ</div></div>
+    </a>
+    <a href="#" class="lb-card">
+      <img class="lb-img" src="https://trapnshorts.com/cdn/shop/files/JA-3-PRICE-OF-ADMISSION-DROPOUT-PURP-HOOD.avif?v=1775704071&width=400" alt="">
+      <div class="lb-overlay"></div>
+      <div class="lb-info"><div class="lb-shoe">Ja 3 Price of Admission</div><div class="lb-name">Dropout Purple</div></div>
+    </a>
+    <a href="#" class="lb-card">
+      <img class="lb-img" src="https://trapnshorts.com/cdn/shop/files/AJ12-TAXI-JASON-BLACK-HOOD.avif?v=1775705301&width=400" alt="">
+      <div class="lb-overlay"></div>
+      <div class="lb-info"><div class="lb-shoe">Jordan 12 Taxi</div><div class="lb-name">Jason Mask</div></div>
+    </a>
+    <a href="#" class="lb-card">
+      <img class="lb-img" src="https://trapnshorts.com/cdn/shop/files/HARDEN-9-FLAMINGO-YT-PAINTD-PINK-HOOD.avif?v=1775703882&width=400" alt="">
+      <div class="lb-overlay"></div>
+      <div class="lb-info"><div class="lb-shoe">Harden 9 Flamingo</div><div class="lb-name">Paintd Pink</div></div>
+    </a>
+  </div>
+</section>
+
+<!-- CHOOSE YOUR LANE -->
+<section class="section" style="padding-top:0">
+  <div class="sec-kicker">Navigate the Universe</div>
+  <div class="sec-head">
+    <h2 class="sec-title">CHOOSE<br><span>YOUR LANE</span></h2>
+  </div>
+  <div class="lanes-grid">
+    <a href="#" class="lane">
+      <img src="https://trapnshorts.com/cdn/shop/files/WHATTHE_600x.jpg?v=1769903134" alt="Hoop Shorts">
+      <div class="lane-content">
+        <div class="lane-label">HOOP SHORTS</div>
+        <div class="lane-sub">Court feel. TRAPN™ swagger.</div>
+        <div class="lane-cta">Shop All →</div>
+      </div>
+    </a>
+    <a href="#" class="lane">
+      <img src="https://trapnshorts.com/cdn/shop/files/shopify_54_600x.png?v=1766091788" alt="Pro Style">
+      <div class="lane-content">
+        <div class="lane-label">PRO STYLE</div>
+        <div class="lane-sub">Heavy mesh. Elite build.</div>
+        <div class="lane-cta">Shop PRO →</div>
+      </div>
+    </a>
+    <a href="#" class="lane">
+      <img src="https://trapnshorts.com/cdn/shop/files/JOGGER_LOOP_BLUE_ACID-MAIN_600x.png?v=1772849231" alt="Joggers">
+      <div class="lane-content">
+        <div class="lane-label">JOGGERS & HOODS</div>
+        <div class="lane-sub">Loopback terry. Complete the fit.</div>
+        <div class="lane-cta">Shop Sets →</div>
+      </div>
+    </a>
+    <a href="#" class="lane">
+      <img src="https://trapnshorts.com/cdn/shop/files/HiM_NEON_GRINCH_MAIN_600x.jpg?v=1773186392" alt="Clearance Vault">
+      <div class="lane-content">
+        <div class="lane-label">CLEARANCE VAULT</div>
+        <div class="lane-sub">Last-chance drops. Past exclusives.</div>
+        <div class="lane-cta">Shop Vault →</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<div class="test-section">
+  <div class="test-inner">
+    <div class="sec-kicker">Real Talk</div>
+    <div class="sec-head">
+      <h2 class="sec-title">WHAT THEY<br><span>SAY</span></h2>
+      <span style="font-family:var(--font-display);font-size:18px;color:var(--muted);letter-spacing:0.08em">★★★★★ 5.0</span>
+    </div>
+    <div class="test-grid">
+      <div class="test-card">
+        <div class="test-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p class="test-text">"The sneaker match concept is genius. I bought the Orange Mamba to match my Kobe 6 Total Oranges and the fit was perfect. People at the park couldn't stop asking where I got them."</p>
+        <div class="test-author">
+          <div class="test-av">DT</div>
+          <div><div class="test-name">D. THOMAS</div><div class="test-detail">Orange Mamba Mesh — Kobe 6 Match</div></div>
+          <div class="test-check">✓ Verified</div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p class="test-text">"Soft-QD material is no joke. Wore them on court, then straight to dinner. Zero discomfort, quick dry was real. Already got three pairs and have three more in my wishlist."</p>
+        <div class="test-author">
+          <div class="test-av">MJ</div>
+          <div><div class="test-name">M. JONES</div><div class="test-detail">Apollo Sky Soft-QD</div></div>
+          <div class="test-check">✓ Verified</div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p class="test-text">"RIVALS: MJ Edition for my Jordan 1 Chicago — the match was immaculate. Shipping was fast, the Pro Mesh construction is premium. TRAPN™ is the only brand doing this at this level."</p>
+        <div class="test-author">
+          <div class="test-av">KB</div>
+          <div><div class="test-name">K. BURNS</div><div class="test-detail">RIVALS: MJ Edition — Jordan 1 Chicago</div></div>
+          <div class="test-check">✓ Verified</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NEWSLETTER -->
+<div class="nl-section">
+  <div class="nl-inner">
+    <div class="nl-kicker">First on the Drop</div>
+    <h2 class="nl-title">NEW DROPS<br><span>FIRST.</span></h2>
+    <p class="nl-desc">Be the first to know when new sneaker matches drop. One email a month. No filler. Just fire.</p>
+    <div class="nl-form">
+      <input type="email" class="nl-input" placeholder="Your email address">
+      <button class="nl-btn">Lock In</button>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <a href="#" class="f-logo">TRAP<span>N™</span></a>
+        <div class="f-tagline">Basketball Shorts to Match Your Sneakers</div>
+        <p class="f-desc">Built for hoopers. Designed for sneakerheads. Pro Mesh, Soft-QD, and GO materials — real pockets, real fit, real price.</p>
+        <div class="f-socials">
+          <a href="https://instagram.com/trapnshorts" class="f-soc">IG</a>
+          <a href="https://facebook.com/trapnshorts" class="f-soc">FB</a>
+          <a href="https://pinterest.com/trapnshorts" class="f-soc">PT</a>
+        </div>
+      </div>
+      <div>
+        <div class="f-col-title">SHOP</div>
+        <ul class="f-links">
+          <li><a href="#">All Basketball Shorts</a></li>
+          <li><a href="#">Pro Mesh</a></li>
+          <li><a href="#">Soft-QD</a></li>
+          <li><a href="#">GO Dry</a></li>
+          <li><a href="#">Joggers & Hoodies</a></li>
+          <li><a href="#">Clearance Vault</a></li>
+          <li><a href="#">Ready-to-Ship</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="f-col-title">SNEAKER MATCH</div>
+        <ul class="f-links">
+          <li><a href="#">Find Your Match</a></li>
+          <li><a href="#">Jordan Matches</a></li>
+          <li><a href="#">Kobe Matches</a></li>
+          <li><a href="#">Ja Morant Matches</a></li>
+          <li><a href="#">Sneaker Release Calendar</a></li>
+          <li><a href="#">Match Gallery</a></li>
+          <li><a href="#">New Drops</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="f-col-title">SUPPORT</div>
+        <ul class="f-links">
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Rewards</a></li>
+          <li><a href="#">Fit Wishlist</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">FAQ & Shipping</a></li>
+          <li><a href="#">Returns & Refunds</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="f-copy">© 2026 TRAPN™ Shorts. All rights reserved. Built for hoopers.</div>
+      <div class="f-pays">
+        <span class="f-pay">Visa</span>
+        <span class="f-pay">Mastercard</span>
+        <span class="f-pay">PayPal</span>
+        <span class="f-pay">Apple Pay</span>
+        <span class="f-pay">Shop Pay</span>
+        <span class="f-pay">Google Pay</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- DESIGN SPEC -->
+<div class="spec-section">
+  <div class="spec-inner">
+    <div class="sec-kicker">Design System</div>
+    <h2 class="sec-title" style="margin-bottom:var(--s4)">TRAPN™ — <span>UI SPEC</span></h2>
+    <p style="font-size:13px;color:var(--grey);max-width:520px;line-height:1.8">Bold dark athletic aesthetic. Bebas Neue for impact and hype energy, Barlow for clean readability. Neon green primary accent against pure black. Conversion-focused layout built for the sneakerhead customer journey.</p>
+    <div class="spec-grid">
+      <div class="spec-card">
+        <div class="spec-t">COLOR PALETTE</div>
+        <div class="sw"><div class="sw-c" style="background:#080808"></div><div><div class="sw-n">Black</div><div class="sw-h">#080808 — Background</div></div></div>
+        <div class="sw"><div class="sw-c" style="background:#00ff88"></div><div><div class="sw-n">Neon Green</div><div class="sw-h">#00ff88 — Primary Accent</div></div></div>
+        <div class="sw"><div class="sw-c" style="background:#4a9eff"></div><div><div class="sw-n">Electric Blue</div><div class="sw-h">#4a9eff — Soft-QD</div></div></div>
+        <div class="sw"><div class="sw-c" style="background:#ff4a1a"></div><div><div class="sw-n">Fire Orange</div><div class="sw-h">#ff4a1a — Mamba / Fire</div></div></div>
+        <div class="sw"><div class="sw-c" style="background:#9a4aff"></div><div><div class="sw-n">Purple</div><div class="sw-h">#9a4aff — Purple Tape</div></div></div>
+        <div class="sw"><div class="sw-c" style="background:#ffb800"></div><div><div class="sw-n">Gold</div><div class="sw-h">#ffb800 — Stars / Sale</div></div></div>
+      </div>
+      <div class="spec-card">
+        <div class="spec-t">TYPOGRAPHY</div>
+        <div style="margin-bottom:var(--s5)">
+          <div style="font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);margin-bottom:4px">Display — Bebas Neue</div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:42px;letter-spacing:0.06em;color:var(--white);line-height:0.9">SHORTS<br><span style="color:var(--neon)">MATCH</span></div>
+        </div>
+        <div style="margin-bottom:var(--s5)">
+          <div style="font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);margin-bottom:4px">Body — Barlow 300</div>
+          <div style="font-family:'Barlow',sans-serif;font-size:13px;font-weight:300;color:var(--grey);line-height:1.7">Clean, athletic copy for product info and UI.</div>
+        </div>
+        <div>
+          <div style="font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);margin-bottom:4px">Kicker — Bebas 11px</div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:11px;letter-spacing:0.26em;color:var(--neon)">SNEAKER MATCH</div>
+        </div>
+      </div>
+      <div class="spec-card">
+        <div class="spec-t">SPACING SYSTEM</div>
+        <div style="display:flex;flex-direction:column;gap:var(--s3)">
+          <div style="display:flex;align-items:center;gap:var(--s4)"><div style="width:4px;height:14px;background:var(--neon);opacity:0.7"></div><span style="font-size:10px;color:var(--muted)">4px — micro</span></div>
+          <div style="display:flex;align-items:center;gap:var(--s4)"><div style="width:8px;height:14px;background:var(--neon);opacity:0.7"></div><span style="font-size:10px;color:var(--muted)">8px — tight</span></div>
+          <div style="display:flex;align-items:center;gap:var(--s4)"><div style="width:16px;height:14px;background:var(--neon);opacity:0.7"></div><span style="font-size:10px;color:var(--muted)">16px — base</span></div>
+          <div style="display:flex;align-items:center;gap:var(--s4)"><div style="width:24px;height:14px;background:var(--neon);opacity:0.7"></div><span style="font-size:10px;color:var(--muted)">24px — card</span></div>
+          <div style="display:flex;align-items:center;gap:var(--s4)"><div style="width:48px;height:14px;background:var(--neon);opacity:0.7"></div><span style="font-size:10px;color:var(--muted)">48px — section</span></div>
+          <div style="display:flex;align-items:center;gap:var(--s4)"><div style="width:80px;height:14px;background:var(--neon);opacity:0.7"></div><span style="font-size:10px;color:var(--muted)">80px — section pad</span></div>
+        </div>
+      </div>
+      <div class="spec-card">
+        <div class="spec-t">UI COMPONENTS</div>
+        <div style="display:flex;flex-direction:column;gap:var(--s5)">
+          <div>
+            <div style="font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);margin-bottom:6px">Buttons</div>
+            <div style="display:flex;flex-direction:column;gap:6px">
+              <div style="background:var(--neon);color:var(--black);padding:10px 20px;font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:0.1em;display:inline-block;width:fit-content">FIND YOUR MATCH</div>
+              <div style="background:transparent;border:2px solid var(--border-mid);color:var(--white);padding:9px 20px;font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:0.1em;display:inline-block;width:fit-content">SHOP ALL</div>
+            </div>
+          </div>
+          <div>
+            <div style="font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);margin-bottom:6px">Badges</div>
+            <div style="display:flex;gap:6px;flex-wrap:wrap">
+              <span style="background:var(--neon);color:var(--black);font-family:'Bebas Neue',sans-serif;font-size:11px;letter-spacing:0.1em;padding:3px 9px">NEW</span>
+              <span style="background:var(--fire);color:var(--white);font-family:'Bebas Neue',sans-serif;font-size:11px;letter-spacing:0.1em;padding:3px 9px">FIRE</span>
+              <span style="background:var(--gold);color:var(--black);font-family:'Bebas Neue',sans-serif;font-size:11px;letter-spacing:0.1em;padding:3px 9px">SALE</span>
+              <span style="background:var(--electric);color:var(--black);font-family:'Bebas Neue',sans-serif;font-size:11px;letter-spacing:0.1em;padding:3px 9px">SOFT-QD</span>
+            </div>
+          </div>
+          <div style="font-size:10px;color:var(--muted);line-height:1.9;letter-spacing:0.04em">
+            Nav: 64px · Product grid: 3px gap<br>
+            Lookbook: 6-col · Ratio 3:4<br>
+            Material cards: 3-col<br>
+            Max width: 1440px · 4pt base
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MOBILE SECTION -->
+<div class="mobile-section">
+  <div class="mobile-inner">
+    <div class="sec-kicker">Responsive Design</div>
+    <h2 class="sec-title" style="margin-bottom:0">MOBILE<br><span>DRIP</span></h2>
+    <div class="mobile-grid">
+      <div>
+        <h3 class="mob-title" style="margin-top:var(--s6)">ON<br><span>EVERY</span><br>SCREEN</h3>
+        <p class="mob-body">Sneakerheads browse drops on their phone. The TRAPN™ redesign is built mobile-first — the sneaker match lookup, new drops, and cart flow all optimised for the quick purchase moment.</p>
+        <div class="mob-specs">
+          <div class="mob-spec">Single-column product grid on mobile</div>
+          <div class="mob-spec">Sticky nav — logo left, cart right</div>
+          <div class="mob-spec">Sneaker Match filter scrolls horizontally</div>
+          <div class="mob-spec">Hero stacks full-width with CTA below</div>
+          <div class="mob-spec">Lookbook grid collapses to 2-col</div>
+          <div class="mob-spec">Sticky Add to Cart on product pages</div>
+          <div class="mob-spec">Material cards stack vertically</div>
+          <div class="mob-spec">44px minimum touch targets throughout</div>
+        </div>
+      </div>
+      <div class="phones">
+
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="ph-nav">
+              <span style="font-size:11px;color:var(--muted)">☰</span>
+              <span class="ph-logo">TRAP<span>N™</span></span>
+              <span style="font-size:12px;color:var(--neon)">🛍</span>
+            </div>
+            <div class="ph-hero">
+              <img src="https://trapnshorts.com/cdn/shop/files/WHATTHE_600x.jpg?v=1769903134" alt="">
+              <div class="ph-overlay"></div>
+              <div class="ph-hero-text">
+                <div class="ph-htag">Sneaker Match</div>
+                <div class="ph-htitle">SHORTS<br><span style="color:var(--neon)">MATCH</span></div>
+              </div>
+            </div>
+            <div class="ph-content">
+              <div class="ph-sec">Trending Drops</div>
+              <div class="ph-pgrid">
+                <div class="ph-p">
+                  <div class="ph-pimg"><img src="https://trapnshorts.com/cdn/shop/files/APOLLOSKY.jpg?v=1765491281&width=300" alt=""></div>
+                  <div class="ph-pinfo"><div class="ph-pname">Apollo Sky</div><div class="ph-pprice">$30</div></div>
+                </div>
+                <div class="ph-p">
+                  <div class="ph-pimg"><img src="https://trapnshorts.com/cdn/shop/files/rivals-mj-main.png?v=1772685605&width=300" alt=""></div>
+                  <div class="ph-pinfo"><div class="ph-pname">RIVALS: MJ</div><div class="ph-pprice">$33</div></div>
+                </div>
+                <div class="ph-p">
+                  <div class="ph-pimg"><img src="https://trapnshorts.com/cdn/shop/files/ORANGE_MAMBA_MAIN.png?v=1773170078&width=300" alt=""></div>
+                  <div class="ph-pinfo"><div class="ph-pname">Orange Mamba</div><div class="ph-pprice">$30</div></div>
+                </div>
+                <div class="ph-p">
+                  <div class="ph-pimg"><img src="https://trapnshorts.com/cdn/shop/files/purple-tape-main.png?v=1772402241&width=300" alt=""></div>
+                  <div class="ph-pinfo"><div class="ph-pname">Purple Tape</div><div class="ph-pprice">$30</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="ph-nav">
+              <span style="font-size:11px;color:var(--muted)">←</span>
+              <span class="ph-logo">TRAP<span>N™</span></span>
+              <span style="font-size:12px;color:var(--neon)">♡</span>
+            </div>
+            <div style="height:170px;overflow:hidden;background:var(--card)">
+              <img src="https://trapnshorts.com/cdn/shop/files/game-winner.png?v=1763931308&width=400" style="width:100%;height:100%;object-fit:cover;filter:brightness(0.65)" alt="">
+            </div>
+            <div style="padding:10px 12px;flex:1;background:var(--black)">
+              <div style="font-family:'Bebas Neue',sans-serif;font-size:8px;letter-spacing:0.2em;color:var(--neon);margin-bottom:3px">MESH PRO · BASKETBALL SHORTS</div>
+              <div style="font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:0.06em;color:var(--white);margin-bottom:3px">GAME-WINNER</div>
+              <div style="font-size:10px;color:var(--muted);margin-bottom:6px">Matches Jordan 4 Bred</div>
+              <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:0.06em;color:var(--white);margin-bottom:8px">$30.00</div>
+              <div style="background:var(--neon);color:var(--black);text-align:center;padding:9px;font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:0.12em;margin-bottom:4px">Add to Cart</div>
+              <div style="border:1.5px solid var(--border-mid);text-align:center;padding:8px;font-family:'Bebas Neue',sans-serif;font-size:12px;letter-spacing:0.12em;color:var(--white)">Buy Now</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="ph-nav">
+              <span style="font-size:11px;color:var(--muted)">☰</span>
+              <span class="ph-logo">TRAP<span>N™</span></span>
+              <span style="font-size:12px;color:var(--neon)">🛍</span>
+            </div>
+            <div style="padding:10px 12px;flex:1;background:var(--black);overflow:hidden">
+              <div style="font-family:'Bebas Neue',sans-serif;font-size:8px;letter-spacing:0.2em;color:var(--neon);margin-bottom:3px">Sneaker Match</div>
+              <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:0.06em;color:var(--white);margin-bottom:10px">FIND YOUR MATCH</div>
+              <div style="display:flex;flex-direction:column;gap:5px">
+                <a style="display:flex;align-items:center;gap:8px;padding:8px 10px;background:var(--card);border:1px solid var(--border)">
+                  <div style="width:8px;height:8px;border-radius:50%;background:var(--fire);flex-shrink:0"></div>
+                  <span style="font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:0.08em;color:var(--white)">JORDAN MATCHES</span>
+                  <span style="margin-left:auto;color:var(--muted);font-size:11px">→</span>
+                </a>
+                <a style="display:flex;align-items:center;gap:8px;padding:8px 10px;background:var(--card);border:1px solid var(--border)">
+                  <div style="width:8px;height:8px;border-radius:50%;background:var(--neon);flex-shrink:0"></div>
+                  <span style="font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:0.08em;color:var(--white)">KOBE MATCHES</span>
+                  <span style="margin-left:auto;color:var(--muted);font-size:11px">→</span>
+                </a>
+                <a style="display:flex;align-items:center;gap:8px;padding:8px 10px;background:var(--card);border:1px solid var(--border)">
+                  <div style="width:8px;height:8px;border-radius:50%;background:var(--electric);flex-shrink:0"></div>
+                  <span style="font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:0.08em;color:var(--white)">JA MORANT</span>
+                  <span style="margin-left:auto;color:var(--muted);font-size:11px">→</span>
+                </a>
+              </div>
+              <div style="margin-top:10px">
+                <div style="font-family:'Bebas Neue',sans-serif;font-size:8px;letter-spacing:0.18em;color:var(--neon);margin-bottom:6px">Latest Match</div>
+                <div style="height:80px;overflow:hidden;position:relative">
+                  <img src="https://trapnshorts.com/cdn/shop/files/AJ4-BRED-BONES-BLACK-HOOD.jpg?v=1776031751&width=400" style="width:100%;height:100%;object-fit:cover;filter:brightness(0.7)" alt="">
+                  <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(8,8,8,0.7),transparent);display:flex;align-items:center;padding:0 10px">
+                    <div>
+                      <div style="font-size:7px;color:var(--neon);margin-bottom:2px;font-family:'Bebas Neue',sans-serif;letter-spacing:0.14em">JORDAN 4 BRED</div>
+                      <div style="font-family:'Bebas Neue',sans-serif;font-size:14px;color:var(--white);letter-spacing:0.06em">Bones Match</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
